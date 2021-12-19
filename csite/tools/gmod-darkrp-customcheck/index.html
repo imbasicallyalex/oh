@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html class="no-js css-menubar" lang="en">
+<head>
+
+<title>Custom Check Generator | cSite Alpha</title>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+<meta name="keywords" content="tcb, zapster, community, generator, darkrp, jobs, shipments, rust, arma, games, clan, hosting, forum, donation, system">
+<meta name="description" content="Running a Garry's Mod (DarkRP) server? Use our Custom Check Generator tool for absolutely free and make the whole process that much easier!">
+
+<meta property="og:title" content="Custom Check Generator | cSite Alpha">
+<meta property="og:description" content="Running a Garry's Mod (DarkRP) server? Use our Custom Check Generator tool for absolutely free and make the whole process that much easier!">
+<meta property="og:url" content="https://csite.io/tools/gmod-darkrp-customcheck">
+<meta property="og:site_name" content="cSite">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://csite.io/assets/images/logo-blue@2x.png">
+<meta property="og:image:secure_url" content="https://csite.io/assets/images/logo-blue@2x.png">
+<meta property="og:image:type" content="image/png">
+
+<meta name="twitter:card" content="cSite">
+<meta name="twitter:site" content="@cSiteIO">
+<meta name="twitter:creator" content="@cSiteIO">
+<meta name="twitter:title" content="cSite">
+<meta name="twitter:description" content="Running a Garry's Mod (DarkRP) server? Use our Custom Check Generator tool for absolutely free and make the whole process that much easier!">
+<meta name="twitter:image:src" content="https://csite.io/assets/images/logo-blue@2x.png">
+
+<meta name="twitter:site" value="@cSiteIO">
+
+<link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<link rel="shortcut icon" href="/assets/images/favicon.ico">
+
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
+
+<link rel="stylesheet" href="/build/assets/app-a18b8a5bab.css">
+<!--[if lte IE 8]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/excanvas.min.js"></script>
+    <![endif]-->
+<!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+<!--[if lt IE 10]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.carousel.min.css">
+<style>
+        .owl-nav {
+            display: none;
+        }
+
+        .panel-sponsor {
+            width: 920px;
+            max-width: 100%;
+            margin: auto;
+            overflow: hidden;
+            margin-bottom: 1.2rem;
+        }
+    </style>
+
+<script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.sync.bootstrap.min.js" async></script>
+
+<script>
+        window.Spark = {"braintreeMerchantId":"9tv925qpd8y635pk","braintreeToken":"eyJ2ZXJzaW9uIjoyLCJhdXRob3JpemF0aW9uRmluZ2VycHJpbnQiOiJleUowZVhBaU9pSktWMVFpTENKaGJHY2lPaUpGVXpJMU5pSXNJbXRwWkNJNklqSXdNVGd3TkRJMk1UWXRjSEp2WkhWamRHbHZiaUlzSW1semN5STZJbWgwZEhCek9pOHZZWEJwTG1KeVlXbHVkSEpsWldkaGRHVjNZWGt1WTI5dEluMC5leUpsZUhBaU9qRTJNelF3TmpFeU5qUXNJbXAwYVNJNkltSTVNVGd3TkdGaUxUazJPRGd0TkdSaVlpMWhZVEl4TFRJME5tVXlNVE5sWW1FNFpTSXNJbk4xWWlJNklqbDBkamt5TlhGd1pEaDVOak0xY0dzaUxDSnBjM01pT2lKb2RIUndjem92TDJGd2FTNWljbUZwYm5SeVpXVm5ZWFJsZDJGNUxtTnZiU0lzSW0xbGNtTm9ZVzUwSWpwN0luQjFZbXhwWTE5cFpDSTZJamwwZGpreU5YRndaRGg1TmpNMWNHc2lMQ0oyWlhKcFpubGZZMkZ5WkY5aWVWOWtaV1poZFd4MElqcG1ZV3h6Wlgwc0luSnBaMmgwY3lJNld5SnRZVzVoWjJWZmRtRjFiSFFpWFN3aWMyTnZjR1VpT2xzaVFuSmhhVzUwY21WbE9sWmhkV3gwSWwwc0ltOXdkR2x2Ym5NaU9udDlmUS43TnNJMkQ3aF8yOUZydFdDRDRZdFFLUmF5XzFQLXlZdzV0dW1lOHVYR0kzbE5BSkJUT3ZmWEl0Vng1MDVmWE52Ui1vTmpuR3BsQkJxZWh3NWl3SFlvZyIsImNvbmZpZ1VybCI6Imh0dHBzOi8vYXBpLmJyYWludHJlZWdhdGV3YXkuY29tOjQ0My9tZXJjaGFudHMvOXR2OTI1cXBkOHk2MzVway9jbGllbnRfYXBpL3YxL2NvbmZpZ3VyYXRpb24iLCJncmFwaFFMIjp7InVybCI6Imh0dHBzOi8vcGF5bWVudHMuYnJhaW50cmVlLWFwaS5jb20vZ3JhcGhxbCIsImRhdGUiOiIyMDE4LTA1LTA4IiwiZmVhdHVyZXMiOlsidG9rZW5pemVfY3JlZGl0X2NhcmRzIl19LCJjbGllbnRBcGlVcmwiOiJodHRwczovL2FwaS5icmFpbnRyZWVnYXRld2F5LmNvbTo0NDMvbWVyY2hhbnRzLzl0djkyNXFwZDh5NjM1cGsvY2xpZW50X2FwaSIsImVudmlyb25tZW50IjoicHJvZHVjdGlvbiIsIm1lcmNoYW50SWQiOiI5dHY5MjVxcGQ4eTYzNXBrIiwiYXNzZXRzVXJsIjoiaHR0cHM6Ly9hc3NldHMuYnJhaW50cmVlZ2F0ZXdheS5jb20iLCJhdXRoVXJsIjoiaHR0cHM6Ly9hdXRoLnZlbm1vLmNvbSIsInZlbm1vIjoicHJvZHVjdGlvbiIsImNoYWxsZW5nZXMiOltdLCJ0aHJlZURTZWN1cmVFbmFibGVkIjp0cnVlLCJhbmFseXRpY3MiOnsidXJsIjoiaHR0cHM6Ly9jbGllbnQtYW5hbHl0aWNzLmJyYWludHJlZWdhdGV3YXkuY29tLzl0djkyNXFwZDh5NjM1cGsifSwicGF5cGFsRW5hYmxlZCI6dHJ1ZSwicGF5cGFsIjp7ImJpbGxpbmdBZ3JlZW1lbnRzRW5hYmxlZCI6dHJ1ZSwiZW52aXJvbm1lbnROb05ldHdvcmsiOmZhbHNlLCJ1bnZldHRlZE1lcmNoYW50IjpmYWxzZSwiYWxsb3dIdHRwIjpmYWxzZSwiZGlzcGxheU5hbWUiOiJaYXBzdGVyU3R1ZGlvcyIsImNsaWVudElkIjoiQVV3bzlZV2ZPeEUyMDdkSmFZbHZDaXFOTU04OVNOeWp6X1ZjX3JrdFc0ZS1haERuZ2l3UmlDWTIwOWk4RWprazZ4REROSk14ampBOEIxZm0iLCJwcml2YWN5VXJsIjoiaHR0cHM6Ly96YXBzdGVyc3R1ZGlvcy5jb20vYWJvdXQvcHJpdmFjeSIsInVzZXJBZ3JlZW1lbnRVcmwiOiJodHRwczovL3phcHN0ZXJzdHVkaW9zLmNvbS9hYm91dC90ZXJtcyIsImJhc2VVcmwiOiJodHRwczovL2Fzc2V0cy5icmFpbnRyZWVnYXRld2F5LmNvbSIsImFzc2V0c1VybCI6Imh0dHBzOi8vY2hlY2tvdXQucGF5cGFsLmNvbSIsImRpcmVjdEJhc2VVcmwiOm51bGwsImVudmlyb25tZW50IjoibGl2ZSIsImJyYWludHJlZUNsaWVudElkIjoiQVJLcllSRGgzQUdYRHpXN3NPXzNiU2txLVUxQzdIR191V05DLXo1N0xqWVNETlVPU2FPdElhOXE2VnBXIiwibWVyY2hhbnRBY2NvdW50SWQiOiJ6YXBzdGVyc3R1ZGlvc1VTRCIsImN1cnJlbmN5SXNvQ29kZSI6IlVTRCJ9fQ==","cardUpFront":false,"collectsBillingAddress":false,"collectsEuropeanVat":false,"createsAdditionalTeams":true,"csrfToken":"My9FmNgMjAIwH16sQzSrFylTRbYsCEzJhUVZaQxJ","currencySymbol":"$","env":"production","roles":[],"state":{"user":null,"teams":[],"currentTeam":null},"stripeKey":null,"teamString":"team","pluralTeamString":"teams","userId":null,"usesApi":true,"usesBraintree":true,"usesTeams":true,"usesStripe":false,"activeTeam":[],"developer":false,"company":"cSite <small class=\"company-small\">Alpha<\/small>","games":{"arma3":{"name":"Arma 3","slug":"arma3","short":"Arma 3","icon":"games\/arma3.png","method":"source","query":true,"rcon":true,"overwrite":{},"packit":false,"tools":false,"mods":{"universal":{"name":"Universal","short":"Universal","icon":"mods\/universal.png","packit":false}}},"gmod":{"name":"Garry's Mod","slug":"gmod","short":"Gmod","icon":"games\/gmod.png","method":"source","query":true,"rcon":true,"packit":true,"runit":true,"services":{"loading":{"url":"\/services\/loading","name":"Loading Interface"}},"tools":true,"mods":{"universal":{"name":"Universal","slug":"universal","short":"Universal","icon":"mods\/universal.png","tools":{"cfg":{"slug":"cfg","name":"Server.cfg Generator"},"mdl":{"slug":"mdl","name":"Playermodel List","view":true},"workshop":{"slug":"workshop","name":"Workshop Collection Generator"}},"packit":"bundle","build":{}},"darkrp":{"name":"DarkRP","slug":"darkrp","short":"DarkRP","icon":"mods\/darkrp.png","git":{"name":"darkrpmodification-master.zip","url":"https:\/\/github.com\/FPtje\/darkrpmodification\/archive\/master.zip"},"repo":"darkrpmodification-master.zip","tools":{"job":{"slug":"job","name":"Job Generator"},"agenda":{"slug":"agenda","name":"Agenda Generator"},"ammo":{"slug":"ammo","name":"Ammo Generator"},"door":{"slug":"door","name":"Door Group Generator"},"entity":{"slug":"entity","name":"Entity Generator"},"food":{"slug":"food","name":"Food Generator"},"chat":{"slug":"chat","name":"Chat Group Generator"},"shipment":{"slug":"shipment","name":"Shipment Generator"},"vehicle":{"slug":"vehicle","name":"Vehicle Generator"},"category":{"slug":"category","name":"Category Generator"},"customcheck":{"slug":"customcheck","name":"Custom Check Generator"},"demote":{"slug":"demote","name":"Demote Group Generator"}},"packit":{"requirements":{"server":{"name":"Garry's Mod (Server)","type":"Both","version":"Latest"},"darkrp":{"name":"DarkRP (Gamemode)","version":"2.6+","type":"Both","link":"https:\/\/github.com\/FPtje\/DarkRP"},"modification":{"name":"DarkRP Modification","version":"Latest","type":"RunIT","link":"https:\/\/github.com\/FPtje\/darkrpmodification"}},"included":{"modification":{"name":"DarkRP Modification","version":"Latest","type":"PackIT","link":"https:\/\/github.com\/FPtje\/darkrpmodification"}}},"build":{}}}},"minecraft":{"name":"Minecraft","slug":"minecraft","short":"Minecraft","icon":"games\/minecraft.png","method":"minecraft","query":true,"rcon":true,"packit":false,"tools":false,"mods":{"universal":{"name":"Universal","short":"Universal","icon":"mods\/universal.png","packit":false}}}},"resource":null,"custom":"gmod-darkrp-customcheck","navigation":{"home":{"key":"home","name":"Home","icon":"md-home","link":"\/","active":"\/","type":"simple","display":"!vm.user"},"dashboard":{"key":"dashboard","name":"Dashboard","icon":"md-view-dashboard","link":"\/home","active":"\/home(.*)","type":"simple","display":"vm.user"},"servers":{"key":"servers","name":"Servers","icon":"md-dns","link":"\/servers","active":"\/servers(.*)","type":"simple","disabled":"!vm.user"},"collections":{"key":"collections","name":"Collections","icon":"md-collection-bookmark","link":"\/collections","active":"\/collections(.*)","type":"simple","disabled":"!vm.user"},"tools":{"key":"tools","name":"Tools","icon":"md-wrench","link":"\/tools","active":"\/tools(.*)","type":"simple"},"services":{"key":"services","name":"Services","icon":"md-puzzle-piece","link":"\/services","active":"\/services(.*)","type":"dropdown","disabled":"!vm.user","subitems":{"domain":{"key":"domain","name":"Domain Configuration","icon":"md-router","link":"\/services\/domain","active":"\/services\/domain(.*)"},"separator":{"type":"separator"},"loading":{"key":"loading","name":"Loading Interface","icon":"md-refresh","link":"\/services\/loading","active":"\/services\/loading(.*)"},"forum":{"key":"forum","name":"Forum Interface","icon":"md-comments","link":"\/services\/forum","active":"\/services\/forum(.*)","disabled":"false"},"store":{"key":"store","name":"Store Interface","icon":"md-shopping-basket","link":"\/services\/store","active":"\/services\/store(.*)","disabled":"false"}}},"more":{"key":"more","name":"More","icon":"md-more-vert","link":"#","active":"\/about(.*)","type":"dropdown","subitems":{"faq":{"key":"faq","name":"FAQ","icon":"md-pin-help","link":"\/about\/faq","active":"\/about\/faq(.*)"},"suggestions":{"key":"suggestions","name":"Suggestions","icon":"md-labels","link":"\/about\/suggestions","active":"\/about\/suggestions(.*)"},"assets":{"key":"assets","name":"Brand Assets","icon":"md-collection-folder-image","link":"\/about\/assets","active":"\/about\/assets(.*)"},"roadmap":{"key":"roadmap","name":"Roadmap","icon":"md-map","link":"https:\/\/trello.com\/b\/bUM3gaKE\/roadmap","external":true},"reviews":{"key":"reviews","name":"Reviews","icon":"md-ticket-star","link":"https:\/\/www.trustpilot.com\/review\/csite.io","external":true},"stackshare":{"key":"stackshare","name":"StackShare","icon":"md-memory","link":"https:\/\/stackshare.io\/csite\/core","external":true}}}},"routing":{"subdomain":[],"domain":[]}};
+    </script>
+</head>
+<body class="site-navbar-small ">
+<div class="alert alert-danger alert-dismissible" role="alert" style="position:fixed;left:0;right:0;top:0;z-index:9999;border-radius:0px;background:rgb(255 205 210);">
+We are sorry to announce that the cSite project has had its <b>End of Life</b> date set to the <b>1st of December 2021</b>.
+Current subscriptions will be cancelled on the <b>1st of November 2021</b>.
+<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+ </div>
+<div id="spark-app" v-cloak>
+
+<!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+<navbar :user="user" :teams="teams" :current-team="currentTeam" :has-unread-notifications="hasUnreadNotifications" :has-unread-announcements="hasUnreadAnnouncements" :impersonator="''" :developer="''">
+
+<sidebar :notifications="notifications" :has-unread-announcements="hasUnreadAnnouncements" :loading-notifications="loadingNotifications"></sidebar>
+
+<settings></settings>
+</navbar>
+
+<div class="page animsition">
+<tool :user="user" :current-team="currentTeam" inline-template> <div>
+<div class="page-header page-header-bordered">
+<div class="container">
+<h1 class="page-title">Custom Check Generator</h1>
+<div class="page-header-actions">
+<ol class="breadcrumb">
+<li>
+<a href="/home">Dashboard</a>
+</li>
+<li>
+<a href="/tools">Tools</a>
+</li>
+<li class="active">Custom Check Generator</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="page-content">
+<div class="container">
+<div class="row">
+
+<div class="col-xs-12">
+<div class="pull-left">
+<a :href="'/tools#/'+game" class="btn btn-danger">
+<i class="icon icon-left md-arrow-left"></i> Return
+</a>
+<div class="well well-btn m-l-sm pull-right" v-if="form && form.id">
+<strong>Editing: </strong> {{ title(form) }}
+<button type="button" class="btn btn-xs btn-danger m-l-sm" @click="unlink(form.id)">Unlink</button>
+</div>
+</div>
+<div class="pull-right">
+<button type="button" class="btn btn-danger m-r-sm" @click="clearItem">
+<i class="icon icon-left md-format-clear"></i> Clear
+</button>
+<button type="button" class="btn btn-primary" @click="cloneItem">
+<i class="icon icon-left md-copy"></i> Clone
+</button>
+<button type="button" class="btn btn-primary m-r-sm" @click="editItem" :disabled="!user">
+<i class="icon icon-left md-edit"></i> Edit
+</button>
+<button type="button" class="btn btn-success" @click="saveItem" :disabled="!user">
+<i class="icon icon-left md-save"></i> Save
+</button>
+</div>
+<div class="clearfix"></div>
+<hr />
+</div>
+
+<div class="col-xs-12" :class="{'col-lg-6 col-lg-offset-3': getCategories().length == 1}">
+<ul class="blocks blocks-100 blocks-md-1" :class="{'blocks-lg-1': getCategories().length == 1, 'blocks-lg-2': getCategories().length != 1}" data-load="masonry">
+
+<li class="masonry-item m-b-none" v-for="(category, categoryKey) in getCategories()">
+<div class="panel" :class="{'panel-optional': category.hiddenKey}">
+<div class="panel-heading">
+<div class="panel-actions" v-if="category.hiddenKey">
+<input-check v-model="form[category.hiddenKey]"></input-check>
+</div>
+<h3 class="panel-title p-none" v-html="category.name"></h3>
+ </div>
+<div class="panel-body panel-form-hint" v-show="form[category.hiddenKey] == null || form[category.hiddenKey]">
+<input-form v-for="input in category.inputs" v-model="form[input.name]" :name="input.name" :form="form" :label="input.label" :input="input.type" :help="input.description" :required="input.required" :settings="input" v-show="!input.active || input.active(form)"></input-form>
+</div>
+</div>
+</li>
+</ul>
+</div>
+
+<div class="col-sm-8 col-sm-offset-2 col-xs-12 clearfix">
+<hr />
+<div class="panel panel-primary">
+<div class="panel-heading border-b-none">
+<h3 class="panel-title p-none"><strong>Generated</strong> Code</h3>
+</div>
+<tools-required :form="form" :categories="categories"></tools-required>
+<div class="panel-body p-md">
+<code-display :language="language" :form="form">{{ prepend(this) }}<component :is="spark.custom"></component></code-display>
+</div>
+<div class="panel-footer p-md" v-if="instructions && instructions.path">
+<strong>Place the above code in:</strong> <code>{{ instructions.path }}</code>
+</div>
+</div>
+<div class="panel panel-sponsor">
+<div class="owl-carousel" id="sponsors">
+<a href="https://www.vultr.com/?ref=7180561" target="_blank" rel="nofollow">
+<img src="https://zapsterstudios.com/assets/img/partners/vultr-banner.png" alt="Vultr" class="panel-img">
+</a>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="text-center m-b-lg">
+<strong>Sponsored Advertisement</strong> &mdash; <a href="https://zapsterstudios.com/advertising" target="_blank">Read more</a>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="modal-collection" tabindex="-1" role="dialog">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<h4 class="modal-title">Select Collection</h4>
+</div>
+<div class="modal-body">
+<input type="text" class="form-control form-control-shadow m-b-sm" placeholder="Search..." v-model="collectionSearch">
+<div class="panel panel-list-six m-b-none">
+<div class="list-group m-b-none">
+<button type="button" class="list-group-item" v-for="collection in filterCollections" @click="saveItemAs(collection)">
+{{ collection.name }}
+<div class="pull-right">
+<span class="label label-default label-outline">{{ collection.items_count }}</span>
+</div>
+</button>
+<div class="list-group-item text-center" v-if="collections.length && !filterCollections.length">
+Nothing matched your search criteria.
+</div>
+<div class="list-group-item text-center" v-if="!collections.length">
+There are currently no collections of this type attached to this team.
+</div>
+</div>
+</div>
+ </div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="modal-item" tabindex="-1" role="dialog">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<h4 class="modal-title">Select Item</h4>
+</div>
+<div class="modal-body">
+<input type="text" class="form-control form-control-shadow m-b-sm" placeholder="Search..." v-model="itemSearch">
+<div class="panel panel-list-six m-b-none">
+<div class="list-group m-b-none">
+<button type="button" class="list-group-item" v-for="item in filterItems" @click="editItemAs(item)">
+<strong>{{ collectionName(item.collection_id) }}:</strong> {{ item.title }}
+</button>
+<div class="list-group-item text-center" v-if="items.length && !filterItems.length">
+Nothing matched your search criteria.
+</div>
+<div class="list-group-item text-center" v-if="!items.length">
+There are currently no items of this type attached to this team.
+</div>
+</div>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="modal-clone" tabindex="-1" role="dialog">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<h4 class="modal-title">Clone Item</h4>
+</div>
+<div class="nav-tabs-horizontal">
+<ul class="nav nav-tabs nav-tabs-line nav-justified" data-plugin="nav-tabs" role="tablist">
+<li :class="{'active': user, 'disabled': !user}" role="presentation">
+<a data-toggle="tab" href="#yourItems" aria-controls="yourItems" role="tab">Your Items</a>
+</li>
+<li :class="{'active': !user}" role="presentation">
+<a data-toggle="tab" href="#premadeItems" aria-controls="premadeItems" role="tab">Premade Items</a>
+</li>
+</ul>
+<div class="tab-content padding-20">
+<div class="tab-pane" :class="{'active': user}" id="yourItems" role="tabpanel">
+<input type="text" class="form-control form-control-shadow m-b-sm" placeholder="Search..." v-model="cloneYourSearch">
+<div class="panel panel-list-six m-b-none">
+<div class="list-group m-b-none">
+<button type="button" class="list-group-item" v-for="item in filterYourItems" @click="cloneItemAs(item)">
+<strong>{{ collectionName(item.collection_id) }}:</strong> {{ item.title }}
+</button>
+<div class="list-group-item text-center" v-if="items.length && !filterYourItems.length">
+Nothing matched your search criteria.
+</div>
+<div class="list-group-item text-center" v-if="!items.length">
+There are currently no items attached to this team.
+</div>
+</div>
+</div>
+</div>
+<div class="tab-pane" :class="{'active': !user}" id="premadeItems" role="tabpanel">
+<input type="text" class="form-control form-control-shadow m-b-sm" placeholder="Search..." v-model="clonePremadeSearch">
+<div class="panel panel-list-six m-b-none">
+<div class="list-group m-b-none">
+<button type="button" class="list-group-item" v-for="item in filterPremadeItems" @click="cloneItemAs(item)">
+<strong>Premade:</strong> {{ item.title }}
+</button>
+<div class="list-group-item text-center" v-if="premade && objectSize(premade) && !filterPremadeItems.length">
+Nothing matched your search criteria.
+</div>
+<div class="list-group-item text-center" v-if="premade && !objectSize(premade)">
+There are currently no premade items attached to this tool.
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</tool> </div>
+
+<footer class="bg-blue-600 ">
+<div class="footer">
+<div class="container">
+<div class="row">
+<div class="col-md-3">
+<img src="/assets/images/assets/2x1/light.png" class="img-logo img-responsive">
+<strong>Welcome to cSite!</strong> We are a company attempting to provide gaming communities and clans with all the necessary tools and services to succeed.
+</div>
+<div class="col-md-3">
+<h4>Company</h4>
+<div class="row">
+<div class="col-lg-6 col-md-12 col-sm-6">
+<ul class="list-unstyled">
+<li>
+<a href="mailto:andreas@zapsterstudios.com" target="_blank">
+<i class="icon icon-fw md-comments"></i> Contact
+</a>
+</li>
+<li>
+<a href="/terms">
+<i class="icon icon-fw md-case"></i> Terms
+</a>
+</li>
+<li>
+<a href="mailto:andreas@zapsterstudios.com" target="_blank">
+<i class="icon icon-fw md-case"></i> DMCA
+</a>
+</li>
+</ul>
+</div>
+<div class="col-lg-6 col-md-12 col-sm-6">
+<ul class="list-unstyled">
+<li>
+<a href="http://status.csite.io" target="_blank">
+<i class="icon icon-fw md-network-setting"></i> Status
+</a>
+</li>
+<li>
+<a href="https://trello.com/b/bUM3gaKE/roadmap" target="_blank">
+<i class="icon icon-fw md-map"></i> Roadmap
+</a>
+</li>
+<li>
+<a href="https://www.trustpilot.com/review/csite.io" target="_blank">
+<i class="icon icon-fw md-ticket-star"></i> TrustPilot
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-3">
+<h4>Connect with us</h4>
+<div class="row">
+<div class="col-lg-6 col-md-12 col-sm-6">
+<ul class="list-unstyled">
+<li>
+<a href="https://www.facebook.com/csiteio/" target="_blank">
+<i class="icon icon-fw md-facebook"></i> Facebook
+</a>
+</li>
+<li>
+<a href="https://twitter.com/cSiteIO" target="_blank">
+<i class="icon icon-fw md-twitter"></i> Twitter
+</a>
+</li>
+</ul>
+</div>
+<div class="col-lg-6 col-md-12 col-sm-6">
+<ul class="list-unstyled">
+<li>
+<a href="https://www.youtube.com/c/csiteio" target="_blank">
+<i class="icon icon-fw md-youtube"></i> YouTube
+</a>
+</li>
+<li>
+<a href="https://plus.google.com/+csiteio" target="_blank">
+<i class="icon icon-fw md-google-plus"></i> Google+
+</a>
+</li>
+</ul>
+</div>
+<div class="col-xs-12">
+<ul class="list-unstyled">
+<li>
+<a href="https://github.com/cSiteio" target="_blank">
+<i class="icon icon-fw md-github"></i> GitHub
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-3">
+<h4>Payments</h4>
+<div class="text-center">
+<a href="https://www.braintreegateway.com/merchants/9tv925qpd8y635pk/verified" target="_blank">
+<img src="/assets/images/braintree-few.png" class="img-responsive img-center img-payment">
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="copyright">
+<div class="container">
+<div class="site-footer-legal">
+Copyright &copy; <a href="/">cSite <small class="company-small">Alpha</small></a> 2016-2021. <i>All rights reserved.</i>
+</div>
+<div class="site-footer-right">
+Trading as <a href="https://zapsterstudios.com" target="_blank">ZapsterStudios</a> registered in Denmark (37555339).
+</div>
+</div>
+</div>
+</footer>
+
+</div>
+
+<script type="text/javascript" src="/build/assets/app-677f3e9215.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/owl.carousel.min.js"></script>
+<script>
+        $('#sponsors').owlCarousel({
+            autoplay: true,
+            autoplaySpeed: 400,
+            autoplayTimeout: 5000,
+            rewind: true,
+            dots: false,
+            items: 1
+        });
+    </script>
+
+
+<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-71556455-3', 'auto');
+        ga('send', 'pageview');
+            </script>
+</body>
+</html>

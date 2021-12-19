@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html class="no-js css-menubar" lang="en">
+<head>
+
+<title>Register | cSite Alpha</title>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+<meta name="keywords" content="tcb, zapster, community, generator, darkrp, jobs, shipments, rust, arma, games, clan, hosting, forum, donation, system">
+<meta name="description" content="Welcome to cSite! Sign up now to start creating your own personalised services, generate code snippets and much more!">
+
+<meta property="og:title" content="Register | cSite Alpha">
+<meta property="og:description" content="Welcome to cSite! Sign up now to start creating your own personalised services, generate code snippets and much more!">
+<meta property="og:url" content="https://csite.io/register">
+<meta property="og:site_name" content="cSite">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://csite.io/assets/images/logo-blue@2x.png">
+<meta property="og:image:secure_url" content="https://csite.io/assets/images/logo-blue@2x.png">
+<meta property="og:image:type" content="image/png">
+
+<meta name="twitter:card" content="cSite">
+<meta name="twitter:site" content="@cSiteIO">
+<meta name="twitter:creator" content="@cSiteIO">
+<meta name="twitter:title" content="cSite">
+<meta name="twitter:description" content="Welcome to cSite! Sign up now to start creating your own personalised services, generate code snippets and much more!">
+<meta name="twitter:image:src" content="https://csite.io/assets/images/logo-blue@2x.png">
+
+<meta name="twitter:site" value="@cSiteIO">
+
+<link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<link rel="shortcut icon" href="/assets/images/favicon.ico">
+
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
+
+<link rel="stylesheet" href="/build/assets/app-a18b8a5bab.css">
+<!--[if lte IE 8]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/excanvas.min.js"></script>
+    <![endif]-->
+<!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+<!--[if lt IE 10]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<script src="https://js.braintreegateway.com/v2/braintree.js"></script>
+
+<script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.sync.bootstrap.min.js" async></script>
+
+<script>
+        window.Spark = {"braintreeMerchantId":"9tv925qpd8y635pk","braintreeToken":"eyJ2ZXJzaW9uIjoyLCJhdXRob3JpemF0aW9uRmluZ2VycHJpbnQiOiJleUowZVhBaU9pSktWMVFpTENKaGJHY2lPaUpGVXpJMU5pSXNJbXRwWkNJNklqSXdNVGd3TkRJMk1UWXRjSEp2WkhWamRHbHZiaUlzSW1semN5STZJbWgwZEhCek9pOHZZWEJwTG1KeVlXbHVkSEpsWldkaGRHVjNZWGt1WTI5dEluMC5leUpsZUhBaU9qRTJNelF3TmpFeU16UXNJbXAwYVNJNklqVm1PV1kxTVRFekxUSXhOR1F0TkdGbU1TMDVObVl5TFRRellUYzJNamN4TURsak1pSXNJbk4xWWlJNklqbDBkamt5TlhGd1pEaDVOak0xY0dzaUxDSnBjM01pT2lKb2RIUndjem92TDJGd2FTNWljbUZwYm5SeVpXVm5ZWFJsZDJGNUxtTnZiU0lzSW0xbGNtTm9ZVzUwSWpwN0luQjFZbXhwWTE5cFpDSTZJamwwZGpreU5YRndaRGg1TmpNMWNHc2lMQ0oyWlhKcFpubGZZMkZ5WkY5aWVWOWtaV1poZFd4MElqcG1ZV3h6Wlgwc0luSnBaMmgwY3lJNld5SnRZVzVoWjJWZmRtRjFiSFFpWFN3aWMyTnZjR1VpT2xzaVFuSmhhVzUwY21WbE9sWmhkV3gwSWwwc0ltOXdkR2x2Ym5NaU9udDlmUS5ERGJmaTFacmNITC1WUGUxZ1h1YlR0ZDBWQmxpNWJjc1JaU25LY01zbURwaldLWmVuWXkzTnBGbHRnUmFNVkRjU0lPbGdGZ25ZdFNIaWktZERSNmxhZyIsImNvbmZpZ1VybCI6Imh0dHBzOi8vYXBpLmJyYWludHJlZWdhdGV3YXkuY29tOjQ0My9tZXJjaGFudHMvOXR2OTI1cXBkOHk2MzVway9jbGllbnRfYXBpL3YxL2NvbmZpZ3VyYXRpb24iLCJncmFwaFFMIjp7InVybCI6Imh0dHBzOi8vcGF5bWVudHMuYnJhaW50cmVlLWFwaS5jb20vZ3JhcGhxbCIsImRhdGUiOiIyMDE4LTA1LTA4IiwiZmVhdHVyZXMiOlsidG9rZW5pemVfY3JlZGl0X2NhcmRzIl19LCJjbGllbnRBcGlVcmwiOiJodHRwczovL2FwaS5icmFpbnRyZWVnYXRld2F5LmNvbTo0NDMvbWVyY2hhbnRzLzl0djkyNXFwZDh5NjM1cGsvY2xpZW50X2FwaSIsImVudmlyb25tZW50IjoicHJvZHVjdGlvbiIsIm1lcmNoYW50SWQiOiI5dHY5MjVxcGQ4eTYzNXBrIiwiYXNzZXRzVXJsIjoiaHR0cHM6Ly9hc3NldHMuYnJhaW50cmVlZ2F0ZXdheS5jb20iLCJhdXRoVXJsIjoiaHR0cHM6Ly9hdXRoLnZlbm1vLmNvbSIsInZlbm1vIjoicHJvZHVjdGlvbiIsImNoYWxsZW5nZXMiOltdLCJ0aHJlZURTZWN1cmVFbmFibGVkIjp0cnVlLCJhbmFseXRpY3MiOnsidXJsIjoiaHR0cHM6Ly9jbGllbnQtYW5hbHl0aWNzLmJyYWludHJlZWdhdGV3YXkuY29tLzl0djkyNXFwZDh5NjM1cGsifSwicGF5cGFsRW5hYmxlZCI6dHJ1ZSwicGF5cGFsIjp7ImJpbGxpbmdBZ3JlZW1lbnRzRW5hYmxlZCI6dHJ1ZSwiZW52aXJvbm1lbnROb05ldHdvcmsiOmZhbHNlLCJ1bnZldHRlZE1lcmNoYW50IjpmYWxzZSwiYWxsb3dIdHRwIjpmYWxzZSwiZGlzcGxheU5hbWUiOiJaYXBzdGVyU3R1ZGlvcyIsImNsaWVudElkIjoiQVV3bzlZV2ZPeEUyMDdkSmFZbHZDaXFOTU04OVNOeWp6X1ZjX3JrdFc0ZS1haERuZ2l3UmlDWTIwOWk4RWprazZ4REROSk14ampBOEIxZm0iLCJwcml2YWN5VXJsIjoiaHR0cHM6Ly96YXBzdGVyc3R1ZGlvcy5jb20vYWJvdXQvcHJpdmFjeSIsInVzZXJBZ3JlZW1lbnRVcmwiOiJodHRwczovL3phcHN0ZXJzdHVkaW9zLmNvbS9hYm91dC90ZXJtcyIsImJhc2VVcmwiOiJodHRwczovL2Fzc2V0cy5icmFpbnRyZWVnYXRld2F5LmNvbSIsImFzc2V0c1VybCI6Imh0dHBzOi8vY2hlY2tvdXQucGF5cGFsLmNvbSIsImRpcmVjdEJhc2VVcmwiOm51bGwsImVudmlyb25tZW50IjoibGl2ZSIsImJyYWludHJlZUNsaWVudElkIjoiQVJLcllSRGgzQUdYRHpXN3NPXzNiU2txLVUxQzdIR191V05DLXo1N0xqWVNETlVPU2FPdElhOXE2VnBXIiwibWVyY2hhbnRBY2NvdW50SWQiOiJ6YXBzdGVyc3R1ZGlvc1VTRCIsImN1cnJlbmN5SXNvQ29kZSI6IlVTRCJ9fQ==","cardUpFront":false,"collectsBillingAddress":false,"collectsEuropeanVat":false,"createsAdditionalTeams":true,"csrfToken":"DDTlRK1oiLTetiW44SZwDZ8zfovZQI4T0mtVvS4P","currencySymbol":"$","env":"production","roles":[],"state":{"user":null,"teams":[],"currentTeam":null},"stripeKey":null,"teamString":"team","pluralTeamString":"teams","userId":null,"usesApi":true,"usesBraintree":true,"usesTeams":true,"usesStripe":false,"activeTeam":[],"developer":false,"company":"cSite <small class=\"company-small\">Alpha<\/small>","games":{"arma3":{"name":"Arma 3","slug":"arma3","short":"Arma 3","icon":"games\/arma3.png","method":"source","query":true,"rcon":true,"overwrite":{},"packit":false,"tools":false,"mods":{"universal":{"name":"Universal","short":"Universal","icon":"mods\/universal.png","packit":false}}},"gmod":{"name":"Garry's Mod","slug":"gmod","short":"Gmod","icon":"games\/gmod.png","method":"source","query":true,"rcon":true,"packit":true,"runit":true,"services":{"loading":{"url":"\/services\/loading","name":"Loading Interface"}},"tools":true,"mods":{"universal":{"name":"Universal","slug":"universal","short":"Universal","icon":"mods\/universal.png","tools":{"cfg":{"slug":"cfg","name":"Server.cfg Generator"},"mdl":{"slug":"mdl","name":"Playermodel List","view":true},"workshop":{"slug":"workshop","name":"Workshop Collection Generator"}},"packit":"bundle","build":{}},"darkrp":{"name":"DarkRP","slug":"darkrp","short":"DarkRP","icon":"mods\/darkrp.png","git":{"name":"darkrpmodification-master.zip","url":"https:\/\/github.com\/FPtje\/darkrpmodification\/archive\/master.zip"},"repo":"darkrpmodification-master.zip","tools":{"job":{"slug":"job","name":"Job Generator"},"agenda":{"slug":"agenda","name":"Agenda Generator"},"ammo":{"slug":"ammo","name":"Ammo Generator"},"door":{"slug":"door","name":"Door Group Generator"},"entity":{"slug":"entity","name":"Entity Generator"},"food":{"slug":"food","name":"Food Generator"},"chat":{"slug":"chat","name":"Chat Group Generator"},"shipment":{"slug":"shipment","name":"Shipment Generator"},"vehicle":{"slug":"vehicle","name":"Vehicle Generator"},"category":{"slug":"category","name":"Category Generator"},"customcheck":{"slug":"customcheck","name":"Custom Check Generator"},"demote":{"slug":"demote","name":"Demote Group Generator"}},"packit":{"requirements":{"server":{"name":"Garry's Mod (Server)","type":"Both","version":"Latest"},"darkrp":{"name":"DarkRP (Gamemode)","version":"2.6+","type":"Both","link":"https:\/\/github.com\/FPtje\/DarkRP"},"modification":{"name":"DarkRP Modification","version":"Latest","type":"RunIT","link":"https:\/\/github.com\/FPtje\/darkrpmodification"}},"included":{"modification":{"name":"DarkRP Modification","version":"Latest","type":"PackIT","link":"https:\/\/github.com\/FPtje\/darkrpmodification"}}},"build":{}}}},"minecraft":{"name":"Minecraft","slug":"minecraft","short":"Minecraft","icon":"games\/minecraft.png","method":"minecraft","query":true,"rcon":true,"packit":false,"tools":false,"mods":{"universal":{"name":"Universal","short":"Universal","icon":"mods\/universal.png","packit":false}}}},"resource":null,"custom":null,"navigation":{"home":{"key":"home","name":"Home","icon":"md-home","link":"\/","active":"\/","type":"simple","display":"!vm.user"},"dashboard":{"key":"dashboard","name":"Dashboard","icon":"md-view-dashboard","link":"\/home","active":"\/home(.*)","type":"simple","display":"vm.user"},"servers":{"key":"servers","name":"Servers","icon":"md-dns","link":"\/servers","active":"\/servers(.*)","type":"simple","disabled":"!vm.user"},"collections":{"key":"collections","name":"Collections","icon":"md-collection-bookmark","link":"\/collections","active":"\/collections(.*)","type":"simple","disabled":"!vm.user"},"tools":{"key":"tools","name":"Tools","icon":"md-wrench","link":"\/tools","active":"\/tools(.*)","type":"simple"},"services":{"key":"services","name":"Services","icon":"md-puzzle-piece","link":"\/services","active":"\/services(.*)","type":"dropdown","disabled":"!vm.user","subitems":{"domain":{"key":"domain","name":"Domain Configuration","icon":"md-router","link":"\/services\/domain","active":"\/services\/domain(.*)"},"separator":{"type":"separator"},"loading":{"key":"loading","name":"Loading Interface","icon":"md-refresh","link":"\/services\/loading","active":"\/services\/loading(.*)"},"forum":{"key":"forum","name":"Forum Interface","icon":"md-comments","link":"\/services\/forum","active":"\/services\/forum(.*)","disabled":"false"},"store":{"key":"store","name":"Store Interface","icon":"md-shopping-basket","link":"\/services\/store","active":"\/services\/store(.*)","disabled":"false"}}},"more":{"key":"more","name":"More","icon":"md-more-vert","link":"#","active":"\/about(.*)","type":"dropdown","subitems":{"faq":{"key":"faq","name":"FAQ","icon":"md-pin-help","link":"\/about\/faq","active":"\/about\/faq(.*)"},"suggestions":{"key":"suggestions","name":"Suggestions","icon":"md-labels","link":"\/about\/suggestions","active":"\/about\/suggestions(.*)"},"assets":{"key":"assets","name":"Brand Assets","icon":"md-collection-folder-image","link":"\/about\/assets","active":"\/about\/assets(.*)"},"roadmap":{"key":"roadmap","name":"Roadmap","icon":"md-map","link":"https:\/\/trello.com\/b\/bUM3gaKE\/roadmap","external":true},"reviews":{"key":"reviews","name":"Reviews","icon":"md-ticket-star","link":"https:\/\/www.trustpilot.com\/review\/csite.io","external":true},"stackshare":{"key":"stackshare","name":"StackShare","icon":"md-memory","link":"https:\/\/stackshare.io\/csite\/core","external":true}}}},"routing":{"subdomain":[],"domain":[]}};
+    </script>
+</head>
+<body class="site-navbar-small page-login-v3 layout-full">
+<div class="alert alert-danger alert-dismissible" role="alert" style="position:fixed;left:0;right:0;top:0;z-index:9999;border-radius:0px;background:rgb(255 205 210);">
+We are sorry to announce that the cSite project has had its <b>End of Life</b> date set to the <b>1st of December 2021</b>.
+Current subscriptions will be cancelled on the <b>1st of November 2021</b>.
+<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div id="spark-app" v-cloak>
+
+<!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+<spark-register-braintree inline-template>
+<div>
+<div class="spark-screen container">
+
+
+<div class="page animsition vertical-align text-center" data-animsition-in="fade-in" data-animsition-out="fade-out">
+<div class="page-content vertical-align-middle">
+<div class="panel m-b-none">
+
+<div class="alert alert-success" v-if="coupon">
+The coupon's {{ discount }} discount will be applied to your subscription!
+</div>
+
+<div class="alert alert-danger" v-if="invalidCoupon">
+Whoops! This coupon code is invalid.
+</div>
+
+<div class="alert alert-success" v-if="invitation">
+We found your invitation to the <strong>{{ invitation.team.name }}</strong> team!
+</div>
+
+<div class="alert alert-danger" v-if="invalidInvitation">
+Whoops! This invitation code is invalid.
+</div>
+
+<div class="alert alert-danger" v-if="registerForm.errors.has('form')">
+{{ registerForm.errors.get('form') }}
+</div>
+
+<div class="alert alert-danger" v-if="registerForm.errors.has('invitation')">
+{{ registerForm.errors.get('invitation') }}
+</div>
+<div class="panel-body">
+<a href="/" class="brand">
+<img class="brand-img" src="/assets/images/logo-blue.png" alt="cSite &lt;small class=&quot;company-small&quot;&gt;Alpha&lt;/small&gt;">
+<h2 class="brand-text font-size-18">cSite <small class="company-small">Alpha</small></h2>
+</a>
+
+<form class="form-horizontal" role="form">
+
+<div class="form-group form-material floating" :class="{'has-error': registerForm.errors.has('team')}" v-if=" ! invitation">
+<input type="name" class="form-control" name="team" v-model="registerForm.team" autofocus>
+<label class="floating-label">Team Name</label>
+<span class="help-block" v-show="registerForm.errors.has('team')">
+{{ registerForm.errors.get('team') }}
+</span>
+</div>
+
+<div class="form-group form-material floating" :class="{'has-error': registerForm.errors.has('name')}">
+<input type="name" class="form-control" name="name" v-model="registerForm.name" autofocus>
+<label class="floating-label">Name</label>
+<span class="help-block" v-show="registerForm.errors.has('name')">
+{{ registerForm.errors.get('name') }}
+</span>
+</div>
+
+<div class="form-group form-material floating" :class="{'has-error': registerForm.errors.has('email')}">
+<input type="email" class="form-control" name="email" v-model="registerForm.email">
+<label class="floating-label">E-Mail Address</label>
+<span class="help-block" v-show="registerForm.errors.has('email')">
+{{ registerForm.errors.get('email') }}
+</span>
+</div>
+
+<div class="form-group form-material floating" :class="{'has-error': registerForm.errors.has('password')}">
+<input type="password" class="form-control" name="password" v-model="registerForm.password">
+<label class="floating-label">Password</label>
+<span class="help-block" v-show="registerForm.errors.has('password')">
+{{ registerForm.errors.get('password') }}
+</span>
+</div>
+
+<div class="form-group form-material floating" :class="{'has-error': registerForm.errors.has('password_confirmation')}">
+<input type="password" class="form-control" name="password_confirmation" v-model="registerForm.password_confirmation">
+<label class="floating-label">Confirm Password</label>
+<span class="help-block" v-show="registerForm.errors.has('password_confirmation')">
+{{ registerForm.errors.get('password_confirmation') }}
+</span>
+</div>
+
+<div class="form-group clearfix" :class="{'has-error': registerForm.errors.has('terms')}">
+<div class="checkbox-custom checkbox-inline checkbox-primary checkbox-lg pull-left">
+<input type="checkbox" name="terms" v-model="registerForm.terms">
+<label for="inputCheckbox">
+I accept the <a href="/terms" target="_blank" class="m-l-none">Terms Of Service</a>
+</label>
+</div>
+</div>
+<button class="btn btn-primary btn-block btn-lg margin-top-30" @click.prevent="register" :disabled="registerForm.busy" v-if="!selectedPlan || selectedPlan.price == 0">
+<span v-if="registerForm.busy">
+Registering...
+</span>
+<span v-else>
+Register
+</span>
+</button>
+</form>
+</div>
+</div>
+<footer class="page-copyright page-copyright-inverse">
+<p>Copyright &copy; <a href="/">cSite <small class="company-small">Alpha</small></a> 2016-2021. <i>All rights reserved.</i></p>
+<p>Trading as <a href="https://zapsterstudios.com" target="_blank">ZapsterStudios</a> registered in Denmark (37555339)</p>
+</footer>
+</div>
+</div>
+
+<div class="row" v-if="coupon">
+<div class="col-md-8 col-md-offset-2">
+<div class="panel panel-success">
+<div class="panel-heading">Discount</div>
+<div class="panel-body">
+The coupon's {{ discount }} discount will be applied to your subscription!
+</div>
+</div>
+</div>
+</div>
+
+<div class="row" v-show="selectedPlan && selectedPlan.price > 0">
+<div class="col-md-8 col-md-offset-2">
+<div class="panel panel-default">
+<div class="panel-heading"><i class="fa fa-btn fa-credit-card"></i>Billing</div>
+<div class="panel-body">
+
+<div class="alert alert-danger" v-if="registerForm.errors.has('form')">
+We had trouble validating your card. It's possible your card provider is preventing
+us from charging the card. Please contact your card provider or customer support.
+</div>
+<form class="form-horizontal" role="form">
+
+<div id="braintree-container" class="m-b-sm"></div>
+
+<div class="form-group" :class="{'has-error': registerForm.errors.has('coupon')}" v-if="query.coupon">
+<label for="number" class="col-md-4 control-label">Coupon Code</label>
+<div class="col-sm-6">
+<input type="text" class="form-control" name="coupon" v-model="registerForm.coupon">
+<span class="help-block" v-show="registerForm.errors.has('coupon')">
+{{ registerForm.errors.get('coupon') }}
+</span>
+</div>
+</div>
+
+<div class="form-group" :class="{'has-error': registerForm.errors.has('terms')}">
+<div class="col-sm-6 col-sm-offset-4">
+<div class="checkbox">
+<label>
+<input type="checkbox" v-model="registerForm.terms">
+I Accept The <a href="/terms" target="_blank">Terms Of Service</a>
+<span class="help-block" v-show="registerForm.errors.has('terms')">
+<strong>{{ registerForm.errors.get('terms') }}</strong>
+</span>
+</label>
+</div>
+</div>
+</div>
+
+<div class="form-group">
+<div class="col-sm-6 col-sm-offset-4">
+<button type="submit" class="btn btn-primary" :disabled="registerForm.busy">
+<span v-if="registerForm.busy">
+<i class="fa fa-btn fa-spinner fa-spin"></i>Registering
+</span>
+<span v-else>
+<i class="fa fa-btn fa-check-circle"></i>Register
+</span>
+</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="modal-plan-details" tabindex="-1" role="dialog">
+<div class="modal-dialog modal-sm">
+<div class="modal-content" v-if="detailingPlan">
+
+<div class="modal-header">
+<h4 class="modal-title">
+{{ detailingPlan.name }}
+</h4>
+</div>
+
+<div class="modal-body">
+<ul class="plan-feature-list p-b-none m-b-none">
+<li v-for="feature in detailingPlan.features">
+{{ feature }}
+</li>
+</ul>
+</div>
+
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</spark-register-braintree>
+</div>
+
+<script type="text/javascript" src="/build/assets/app-677f3e9215.js"></script>
+
+
+<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-71556455-3', 'auto');
+        ga('send', 'pageview');
+            </script>
+</body>
+</html>
